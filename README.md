@@ -2,6 +2,10 @@
 Search by device Name, and number of days port is in state (either up or down)
 Options for a few other things, like excluding shut ports
 
+# Instructions
+clone and rename folder to DownPorts and move to your LibreNMS plugins folder.
+Example /opt/librenms/html/plugins/
+
 # Barely working prototype.
 2024/02/14
 ToDo's
