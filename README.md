@@ -1,3 +1,7 @@
+# LibreNMS plugin to show port Down/Up time
+Search by device Name, and number of days port is in state (either up or down)
+Options for a few other things, like excluding shut ports
+
 # Barely working prototype.
 2024/02/14
 ToDo's
