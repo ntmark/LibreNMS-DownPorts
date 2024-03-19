@@ -20,7 +20,7 @@ $exclude_shut_checked="checked"; # dont include shutdown ports from ifAlias
 
 if ($_POST){
         $do_query=0;
-        if ($_POST["hostname_to_search"] ){
+        if ($_POST["hostname_to_search"] && $_POST["days_down"]){
                 $exclude_shut="";
                 $ports_option="";
                 if ($_POST["exclude_shut"] && $_POST["exclude_shut"]==1) {
@@ -48,9 +48,9 @@ if ($_POST){
                         }
                         # now run?
 
-        #### SQL query for ports.
-        if ($do_query){
-                $query = "
+                        #### SQL query for ports.
+                        if ($do_query){
+                                $query = "
 SELECT
  devices.device_id,
  devices.sysName,
@@ -82,9 +82,9 @@ ORDER BY
 ";
 
 
-        }
-        #echo "ERROR:'".$_POST["vlan_to_search"]."' is not numeric!<br>\n";
-        #echo "ERROR:'".$query."' is not numeric!<br>\n";
+                        }
+                        #echo "ERROR:'".$_POST["vlan_to_search"]."' is not numeric!<br>\n";
+                        #echo "ERROR:'".$query."' is not numeric!<br>\n";
 
 
 
